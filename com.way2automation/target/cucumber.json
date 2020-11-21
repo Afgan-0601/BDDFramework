@@ -1,0 +1,242 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-20T18:50:43.992Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2176628473,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.setUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Validate search cars page",
+        "description": "",
+        "id": "acceptance-testing-to-validate-search-cars-page-is-working-properly.;validate-search-cars-page",
+        "after": [
+          {
+            "result": {
+              "duration": 125996445,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1804383557,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the Home Page \"https://www.carsguide.com.au\" of CarsGuide website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.carsguide.com.au\"",
+                  "offset": 22
+                }
+              ],
+              "location": "SearchCarsSteps.i_am_on_the_Home_Page_of_CarsGuide_website(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1539005186,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I move to the  menu",
+            "match": {
+              "location": "SearchCarsSteps.i_move_to_the_menu(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "menu"
+                ]
+              },
+              {
+                "cells": [
+                  "buy and sell"
+                ]
+              },
+              {
+                "cells": [
+                  "reviews"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1668118262,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "click on \"Search Cars\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Search Cars\"",
+                  "offset": 9
+                }
+              ],
+              "location": "SearchCarsSteps.click_on_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1095371326,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "select car brand as \"BMW\" from AnyMake Dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BMW\"",
+                  "offset": 20
+                }
+              ],
+              "location": "SearchCarsSteps.select_car_brand_as_from_AnyMake_Dropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1083056307,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "select car model as \"1 Series\" from SelectModel Dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1 Series\"",
+                  "offset": 20
+                }
+              ],
+              "location": "SearchCarsSteps.select_car_model_as_from_SelectModel_Dropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1080176984,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "select car location as \"ACT - All\" from SelectLocation Dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ACT - All\"",
+                  "offset": 23
+                }
+              ],
+              "location": "SearchCarsSteps.select_car_location_as_from_SelectLocation_Dropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1076818968,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "select car price as \"$1,000\" from price Dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"$1,000\"",
+                  "offset": 20
+                }
+              ],
+              "location": "SearchCarsSteps.select_car_price_as_from_price_Dropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1545872283,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "click on Find_My_Next_car button",
+            "match": {
+              "location": "SearchCarsSteps.click_on_Find_My_Next_car_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 497012,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I should see list of searched cars",
+            "match": {
+              "location": "SearchCarsSteps.i_should_see_list_of_searched_cars()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 25777282,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the page title should be \"Bmw 1 Series Under 1000 for Sale ACT | carsguide\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bmw 1 Series Under 1000 for Sale ACT | carsguide\"",
+                  "offset": 25
+                }
+              ],
+              "location": "SearchCarsSteps.the_page_title_should_be(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Search_cars"
+          },
+          {
+            "name": "@Search_cars-Positive"
+          }
+        ]
+      }
+    ],
+    "name": "Acceptance testing to validate Search cars page is working properly.",
+    "description": "\tIn order to validate that\n the search cars page wir working fine\n we will do the acceptance testing",
+    "id": "acceptance-testing-to-validate-search-cars-page-is-working-properly.",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/SearchCars.feature",
+    "tags": [
+      {
+        "name": "@Search_cars",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
